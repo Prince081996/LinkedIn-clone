@@ -10,9 +10,11 @@ jobs:
       - name: executing remote ssh commands using password
         uses: appleboy/ssh-action@master
         with:
-          host: "14.140.15.89"
+          host: "13.232.96.211"
           port: "12032"
-          username: "company"
-          password: "$UrY@D3^eL0pMent"
+          username: "user1"
+          password: "Pass1234"
           script: |
-            ls
+            cd LinkedIn-clone
+            git pull origin main
+            pm2 restart 0
