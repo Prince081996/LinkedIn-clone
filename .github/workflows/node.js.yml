@@ -10,11 +10,9 @@ jobs:
       - name: executing remote ssh commands using password
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.HOST }}
-          port: ${{ secrets.PORT }}
-          username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}
+          host: "14.140.15.89"
+          port: "12032"
+          username: "company"
+          password: "$UrY@D3^eL0pMent"
           script: |
-            cd thread/Mailbox-front/
-            git pull origin main
-            pm2 restart 1
+            ls
