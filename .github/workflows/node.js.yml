@@ -10,11 +10,9 @@ jobs:
       - name: executing remote ssh commands using password
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.HOST }}
+          host: "192.168.15.206"
           port: 22
-          username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}
+          username: "dell"
+          password: "Pass1234"
           script: |
-            cd LinkedIn-clone
-            git pull origin main
-            pm2 restart 0
+            ls
