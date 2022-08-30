@@ -10,9 +10,9 @@ jobs:
       - name: executing remote ssh commands using password
         uses: appleboy/ssh-action@master
         with:
-          host: "192.168.15.206"
-          port: 22
-          username: "dell"
-          password: "Pass1234"
+          host: "14.140.15.89"
+          port: "12032"
+          username: "company"
+          password: "$UrY@D3^eL0pMent"
           script: |
             ls
